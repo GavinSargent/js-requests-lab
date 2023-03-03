@@ -213,7 +213,7 @@ function createFood (e){
     }
 
     axios.post('http://localhost:3000/food', maBod).then(result => {
-        console.log(result.data)
+        // console.log(result.data)
         result.data.forEach(item => {
             let element = document.createElement('li')
             element.textContent = item
